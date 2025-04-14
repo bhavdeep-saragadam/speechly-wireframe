@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 7%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 222 47% 15%;
+    --accent-foreground: 213 31% 91%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .speeko-btn {
+    @apply px-4 py-3 rounded-lg font-medium transition-all duration-200 
+           active:scale-95 w-full flex items-center justify-center gap-2;
+  }
+  
+  .speeko-btn-primary {
+    @apply speeko-btn bg-gradient-to-r from-blue-800 to-blue-600 text-white hover:from-blue-700 hover:to-blue-500 shadow-lg shadow-blue-700/20;
+  }
+  
+  .speeko-btn-outline {
+    @apply speeko-btn border border-blue-500/20 hover:bg-blue-500/10 text-blue-100;
+  }
+  
+  .speeko-btn-ghost {
+    @apply speeko-btn hover:bg-blue-500/10 text-blue-100;
+  }
+  
+  .speeko-card {
+    @apply bg-card/80 backdrop-blur-xl rounded-xl border border-white/5 shadow-xl shadow-black/5 p-4 transition-all duration-200;
+  }
+  
+  .speeko-input {
+    @apply w-full px-4 py-3 bg-card/50 backdrop-blur-sm border border-white/10 rounded-lg text-white
+           focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent
+           placeholder:text-white/30;
+  }
+  
+  .speeko-label {
+    @apply block text-sm font-medium text-blue-100 mb-1;
+  }
+  
+  .nav-item {
+    @apply flex items-center gap-2 px-4 py-3 rounded-lg text-blue-100/70 hover:bg-blue-500/10 
+           transition-all duration-200;
+  }
+  
+  .nav-item-active {
+    @apply nav-item bg-blue-500/20 text-blue-100;
+  }
+}
+
