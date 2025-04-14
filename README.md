@@ -1,8 +1,67 @@
-# Welcome to your Lovable project
+# Speechly - AI-Powered Public Speaking Coach
 
-## Project info
+This is a wireframe for Speechly, an AI-powered application that helps users improve their public speaking skills with real-time feedback and analytics.
+
+## Project Technologies
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+- Framer Motion
+
+## Features
+- Dark-themed UI with blue gradients
+- Practice sessions with real-time feedback
+- Speech analysis and insights
+- Course library for improving speaking skills
+- User profile and progress tracking
+- Subscription plans
+
+## Project Structure
+The application includes multiple screens:
+- Welcome/Login Screen
+- Onboarding Flow
+- Dashboard
+- Practice Sessions
+- Analysis Reports
+- Profile Management
+- Subscription Management
+
+## Original Project Information
+
+This project was originally created with Lovable.
 
 **URL**: https://lovable.dev/projects/bdda5057-a840-4daa-b4b2-951ae51dce52
+
+### How to Run the Project
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone https://github.com/bhavdeep-saragadam/speechly-wireframe.git
+
+# Step 2: Navigate to the project directory.
+cd speechly-wireframe
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+### How to Edit the Project
+You can edit this project using:
+- Your preferred IDE
+- GitHub directly
+- GitHub Codespaces
+
+### How to Deploy
+For deployment options, refer to the Lovable documentation.
 
 ## How can I edit this code?
 
